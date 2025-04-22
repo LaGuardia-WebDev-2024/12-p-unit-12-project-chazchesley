@@ -1,9 +1,9 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
+[ yes ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] Add Five CSS Declarations
+[ yes ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
@@ -22,39 +22,72 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
-    <ol>
+    <button id="mem1-button">album #1</button>
+    <button id="mem2-button">album #2</button>
+    <button id="mem3-button">album #3</button>
+    <h1>My Top 3 Favorite Albums <span>This Year</span></h1>
+    <ul>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1"> #1</h3>
+      
+        <img
+             id="album1"
+             src="https://upload.wikimedia.org/wikipedia/en/5/5c/Hmpillsnthrills.jpg"
+             style="display:none"
+             width="300"
+             />
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2"> #2</h3>
+        <img
+             id="album2"
+             src="https://i.scdn.co/image/ab67616d0000b27361eb816641a010b1ae297c71"
+             style="display:none"
+             width="300"
+             />
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3"> #3</h3>
+     <img
+            id="album3"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/In_the_Zone.png/250px-In_the_Zone.png"
+            style="display:none"
+            width="300"
+             />   
       </li>
-    </ol>
+    </ul>
+<div class="muzieknootjes">
+  <div class="noot-1">
+  &#9835; &#9833;
+</div>
+<div class="noot-2">
+  &#9833;
+</div>
+<div class="noot-3">
+  &#9839; &#9834;
+</div>
+<div class="noot-4">
+  &#9834;
+</div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "#fa7611");
+        $("#album1").show(200);
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "#266e02");
+        $("#album2").show(200);
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "#067dd1");
+        $("#album3").show(200);
       });
     </script>
   </body>
