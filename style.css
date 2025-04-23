@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
 html {
-  background-color: white;
+  background-image: url("https://freerangestock.com/sample/52905/blue-music-background-means-instruments-and-soundwaves-.jpg");
   padding-left: 20px;
 }
 
@@ -15,20 +15,31 @@ h1 {
 }
 
 #mem1-button{
-  color:#0fb3fa;
+  color:white;
+  background-color:#ff9cd6;
 }
 #mem2-button{
-  color:#0fb3fa;
+   color:white;
+  background-color:#ff9cd6;
 }
 #mem3-button{
-  color:#0fb3fa;
+  color:white;
+  background-color:#ff9cd6;
+}
+#mem4-button{
+  color:white;
+  background-color:#ff9cd6;
+}
+#mem5-button{
+  color:white;
+  background-color:#ff9cd6;
 }
 body {
-  display: flex;
+/*   display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: white;
+  background-color: (,0,0,0);
   color: pink;
 }
 
@@ -37,8 +48,8 @@ body {
   margin: auto;
   position: relative;
   width: 50%;
-  min-width: 300px;
-  height: 200px;
+  min-width: 600px;
+  height: 1px;
   border: 0px solid #000;
 }
 
