@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
 html {
-  background-color: white;
+  background-image: url("https://freerangestock.com/sample/52905/blue-music-background-means-instruments-and-soundwaves-.jpg");
   padding-left: 20px;
 }
 
@@ -11,4 +11,97 @@ img{
 
 h1 {
   font-family: "Poetsen One", sans-serif;
+  color:#ff9cd6
+}
+
+#mem1-button{
+  color:white;
+  background-color:#ff9cd6;
+}
+#mem2-button{
+   color:white;
+  background-color:#ff9cd6;
+}
+#mem3-button{
+  color:white;
+  background-color:#ff9cd6;
+}
+#mem4-button{
+  color:white;
+  background-color:#ff9cd6;
+}
+#mem5-button{
+  color:white;
+  background-color:#ff9cd6;
+}
+body {
+/*   display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: (,0,0,0);
+  color: pink;
+}
+
+.muzieknootjes {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 600px;
+  height: 1px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
 }
